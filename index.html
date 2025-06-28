@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Weather App</title>
 </head>
+
 <body>
-    
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary back-color">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Weather<div class="fa-2xs text-secondary">tagline goes here</div></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="btn active btn-nav rounded-5 nav-item-text" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-nav rounded-5 nav-item-text" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-nav rounded-5 nav-item-text" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-nav rounded-5 nav-item-text" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-nav rounded-5 nav-item-text" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
     <main>
-        <section class="container my-5 pt-5">
+        <section class="container mb-5 pt-5">
             <div class="back-color clearfix rounded-5 d-flex p-1 shadow-lg">
-                <input class="form-control rounded-start-5 bg-transparent border-0 text-white fs-6" autocomplete="country-name" type="search" name="searchInput" id="searchInput" placeholder="Find your location...">
+                <input class="form-control rounded-start-5 bg-transparent border-0 text-white fs-6"
+                    autocomplete="country-name" type="search" name="searchInput" id="searchInput"
+                    placeholder="Find your location...">
                 <button class="btn btn-find float-end rounded-5 fs-6 text-white px-4 py-2" type="submit">Find</button>
             </div>
         </section>
@@ -31,7 +67,7 @@
                         </div>
                         <div class="card-body text-white">
                             <h2 class="h5 fw-light">Cairo</h2>
-                            <h2 class="h1 fw-bolder">30.3<sup>o</sup>C</h2>
+                            <h2 class="fw-bolder fa-4x">30.3<sup>o</sup>C</h2>
                             <p class="fw-lighter text-info">Clear</p>
                         </div>
                         <div class="card-footer d-flex justify-content-between text-secondary">
@@ -92,9 +128,10 @@
                 console.error('Error fetching IP address:', error);
             }
         }
-    </script>
+    </script>-->
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script> 
 </body>
+
 </html>
