@@ -19,7 +19,11 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary back-color">
         <div class="container my-3">
-            <a class="navbar-brand text-white d-flex gap-2 align-items-center" href="#"><img class="d-inline-block" src="images/logo@2x.png" alt="Logo"> <div class="d-inline-block">Weather<div class="fa-2xs text-secondary">tagline goes here</div></div></a>
+            <a class="navbar-brand text-white d-flex gap-2 align-items-center" href="#"><img class="d-inline-block"
+                    src="images/logo@2x.png" alt="Logo">
+                <div class="d-inline-block">Weather<div class="fa-2xs text-secondary">tagline goes here</div>
+                </div>
+            </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -54,59 +58,86 @@
                 <input class="form-control rounded-start-5 bg-transparent border-0 text-white fs-6"
                     autocomplete="country-name" type="search" name="searchInput" id="searchInput"
                     placeholder="Find your location...">
-                <button class="btn btn-find float-end rounded-5 fs-6 text-white px-4 py-2" type="submit">Find</button>
+                <button id="searchBtn" class="btn btn-find float-end rounded-5 fs-6 text-white px-4 py-2"
+                    type="submit">Find</button>
             </div>
         </section>
-        <section class="container pb-3">
+        <section id="weatherTags" class="container pb-3">
+
+
+
             <div class="row g-1">
                 <div class="col-12 text-center shadow-lg">
-                    <div class="card border-0">
-                        <div class="card-header d-flex justify-content-between text-secondary">
-                            <span>Saturday</span>
-                            <span>28 June</span>
+                    <div class="card border-0" aria-hidden="true">
+                        <div class="card-header d-flex justify-content-between text-secondary placeholder-glow">
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-3"></span>
                         </div>
-                        <div class="card-body text-white">
-                            <h2 class="h5 fw-light">Cairo</h2>
-                            <h2 class="fw-bolder fa-4x">30.3<sup>o</sup>C</h2>
-                            <p class="fw-lighter text-info">Clear</p>
+                        <div class="card-body text-white placeholder-glow">
+                            <h2 class="h5 fw-light placeholder col-6"></h2>
+                            <h2 class="fw-bolder fa-4x mb-3">
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder placeholder-lg col-2"></span>
+                            </h2>
+                            <p class="fw-lighter text-info placeholder col-7"></p>
                         </div>
-                        <div class="card-footer d-flex justify-content-between text-secondary">
-                            <span>20%</span>
-                            <span>18km/h</span>
-                            <span>East</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6 text-center shadow-lg">
-                    <div class="card border-0 ">
-                        <div class="card-header d-flex justify-content-between text-secondary">
-                            <span>Saturday</span>
-                        </div>
-                        <div class="card-body text-white">
-                            <div><i class="fa fa-facebook"></i></div>
-                            <h2 class="h2">40.7<sup>o</sup>C</h2>
-                            <p class="fw-lighter text-secondary">25.2<sup>o</sup></p>
-                            <p class="fw-lighter text-info">Sunny</p>
+                        <div class="card-footer d-flex justify-content-between text-secondary placeholder-glow">
+                            <span class="placeholder col-3"></span>
+                            <span class="placeholder col-3"></span>
+                            <span class="placeholder col-3"></span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-6 text-center shadow-lg">
-                    <div class="card border-0 ">
-                        <div class="card-header d-flex justify-content-between text-secondary">
-                            <span>Saturday</span>
+                    <div class="card border-0" aria-hidden="true">
+                        <div class="card-header d-flex justify-content-between text-secondary placeholder-glow">
+                            <span class="placeholder col-5"></span>
                         </div>
-                        <div class="card-body text-white">
-                            <div><i class="fa fa-facebook"></i></div>
-                            <h2 class="h2">40.7<sup>o</sup>C</h2>
-                            <p class="fw-lighter text-secondary">25.2<sup>o</sup></p>
-                            <p class="fw-lighter text-info">Sunny</p>
+                        <div class="card-body text-white placeholder-glow">
+                            <div class="mb-3">
+                                <span class="placeholder placeholder-lg col-6" style="height: 60px;"></span>
+                            </div>
+                            <h2 class="h2">
+                                <span class="placeholder col-5"></span>
+                            </h2>
+                            <p class="fw-lighter text-secondary">
+                                <span class="placeholder col-3"></span>
+                            </p>
+                            <p class="fw-lighter text-info">
+                                <span class="placeholder col-8"></span>
+                            </p>
                         </div>
                     </div>
                 </div>
 
+                <div class="col-6 text-center shadow-lg">
+                    <div class="card border-0" aria-hidden="true">
+                        <div class="card-header d-flex justify-content-between text-secondary placeholder-glow">
+                            <span class="placeholder col-5"></span>
+                        </div>
+                        <div class="card-body text-white placeholder-glow">
+                            <div class="mb-3">
+                                <span class="placeholder placeholder-lg col-6" style="height: 60px;"></span>
+                            </div>
+                            <h2 class="h2">
+                                <span class="placeholder col-5"></span>
+                            </h2>
+                            <p class="fw-lighter text-secondary">
+                                <span class="placeholder col-3"></span>
+                            </p>
+                            <p class="fw-lighter text-info">
+                                <span class="placeholder col-8"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
+
+
+
         </section>
     </main>
 
@@ -121,7 +152,8 @@
                             <input class="form-control rounded-start-5 bg-transparent border-0 text-white fs-6"
                                 autocomplete="country-name" type="search" name="subInput" id="subInput"
                                 placeholder="Enter your email to subscribe...">
-                            <button class="btn btn-find float-end rounded-5 fs-6 text-white px-4 py-2" type="submit">Find</button>
+                            <button class="btn btn-find float-end rounded-5 fs-6 text-white px-4 py-2"
+                                type="submit">Find</button>
                         </div>
                     </section>
                 </div>
@@ -135,7 +167,7 @@
                 </div>
             </div>
             <div class="mt-5 ms-3">
-                <p class="text-secondary">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                <p class="text-secondary">Copyright 2025 Company name. Designed by Themezy. All rights reserved</p>
             </div>
         </div>
     </footer>
@@ -143,25 +175,8 @@
 
 
 
-
-
-    <!-- <button onclick="getIP()">Get IP Address</button>
-    <p id="ip"></p>
-
-    <script>
-        async function getIP() {
-            try {
-                const response = await fetch('https://api.ipify.org?format=json');
-                const data = await response.json();
-                document.getElementById('ip').innerText = `Your IP Address: ${data.ip}`;
-            } catch (error) {
-                console.error('Error fetching IP address:', error);
-            }
-        }
-    </script>-->
-
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script> 
+    <script src="js/main.js"></script>
 </body>
 
 </html>
