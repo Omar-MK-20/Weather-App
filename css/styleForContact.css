@@ -1,0 +1,33 @@
+.form-control:hover {
+    border-color: rgb(0,154,216) !important;
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.underline-hover {
+    text-decoration: none;
+}
+
+.underline-hover:hover {
+    text-decoration: underline;
+}
+
+textarea {
+    height: 150px;
+}
+
+.text-color {
+    background: linear-gradient(rgb(27, 195, 221),rgb(3, 121, 168));
+    color: transparent;
+    background-clip: text;
+}
+
+.text-small {
+    font-size: 14px;
+}
+
+.map-div {
+    height: 220px;
+}
