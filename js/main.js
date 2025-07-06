@@ -68,7 +68,11 @@ async function getIP()
 {
     try 
     {
-        const response = await fetch('https://api.ipify.org/?format=json');
+        const response = await fetch('https://api.ipify.org/?format=json')
+        if(response.status === 429)
+        {
+            throw new Error(`Rate limit exceeded. Try again later.`);
+        }
         if(!response.ok)
         {
             throw new Error(`Response status: ${response.status}`);
@@ -80,7 +84,7 @@ async function getIP()
     } 
     catch (error) 
     {
-        console.error(`Error fetching IP address:, ${error}`);
+        console.error(`Error fetching IP address: ${error}`);
     }
 }
 
@@ -198,3 +202,6 @@ searchInput.addEventListener('keyup', function(e)
     }
     
 });
+
+
+// =======================================================================================
