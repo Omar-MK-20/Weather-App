@@ -7,7 +7,11 @@ body {
     background-color: rgb(30,32,43) !important;
 }
 
-main {
+.back-color2 {
+    background-color: rgb(38, 41, 54) !important;
+}
+
+main#index {
     background-image: url(../images/banner.jpg);
     /* background-position: center; */
     /* background-size: contain; */
