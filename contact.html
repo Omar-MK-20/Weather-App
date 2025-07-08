@@ -81,7 +81,7 @@
                     <div class="inner">
                         <h1 class="text-white fw-light">Contact us</h1>
                         <p class="text-secondary text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi voluptatem itaque, facilis sed deserunt iusto nam expedita. Quos, quas. Quasi maxime laboriosam debitis est deserunt odio facilis praesentium fuga!</p>
-                        <form class="d-flex flex-column gap-2" action="submit">
+                        <form id="contactForm" class="d-flex flex-column gap-2" action="submit">
                             <div class="row g-2">
                                 <div class="col-md-6">
                                     <input class="form-control text-white bg-transparent rounded-5 border-secondary border-2 py-2 text-small" type="text" placeholder="Your Name..." autocomplete="name">
@@ -99,6 +99,7 @@
                                 </div>
                             </div>
                             <textarea placeholder="Message..." class="form-control text-white bg-transparent rounded-5 border-secondary border-2 py-2 text-small"></textarea>
+                            <button class="btn btn-find ms-auto text-white rounded-5" type="submit">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -115,7 +116,7 @@
                     <section class="container">
                         <div class="back-color clearfix rounded-5 d-flex p-1 shadow-lg">
                             <input class="form-control rounded-start-5 bg-transparent border-0 text-white fs-6"
-                                autocomplete="country-name" type="search" name="subInput" id="subInput"
+                                autocomplete="email" type="search" name="subInput" id="subInput"
                                 placeholder="Enter your email to subscribe...">
                             <button class="btn btn-find float-end rounded-5 fs-6 text-white px-4 py-2"
                                 type="submit">Find</button>
@@ -141,7 +142,7 @@
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+     <script src="js/contact.js"></script>
 </body>
 
 </html>
